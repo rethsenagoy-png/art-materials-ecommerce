@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistic You | Art Materials Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="CSS/css.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Start of Navigation -->
+      <section>
+        <nav class="navbar navbar-expand-lg sticky-top glass">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img
+                src="Image/Logo.png"
+                alt="Artistic You logo"
+                width="48"
+                height="48"
+                class="me-2"
+              />
+              Artistic You
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contacts.html">Contacts</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control rounded-pill me-2"
+                  type="search"
+                  placeholder="Search art supplies"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary rounded-pill" type="submit">
+                  Search
+                </button>
+              </form>
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-pill ms-lg-3 mt-2 mt-lg-0"
+              >
+                <i class="bi bi-cart3"></i> Cart
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- End of Navigation -->
+
+      <hr />
+
+      <!-- Start of Banner (Carousell) -->
+      <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="Image/Banner 1.png"
+                class="d-block w-100"
+                alt="Artistic You welcome banner"
+                height="650"
+              />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="Image/Banner 2.svg"
+                class="d-block w-100"
+                alt="Be the artistic version of you"
+                height="600"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Be The Artistic version Of You!</h5>
+                <p>
+                  Practice, practice and more practice builds professional
+                  artists!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Image/Banner 3.svg"
+                class="d-block w-100"
+                alt="Sketch pad and watercolor palette"
+                height="600"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Every blank page is an invitation.</h5>
+                <p>
+                  Pick up a pencil, let the colors run,<br />
+                  your story is waiting to be begun.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>++++++++
+          </button>
+        </div>
+      </section>
+      <!-- End OF Banner -->
+
+      <hr />
+
+      <!-- Start of Top 10 Products (CARD) -->
+      <section class="container my-5 Top-Products">
+        <h2 class="text-center mb-4">Top 10 Products</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Sketch pad.jpg"
+                class="card-img-top"
+                alt="A4 Sketch Pad"
+              />
+              <div class="card-body">
+                <h5 class="card-title">A4 Sketch Pad</h5>
+                <p class="card-text">
+                  Spiral-bound pad with sturdy paper for pencil, charcoal and
+                  ink.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Pencil Sketch.jpg"
+                class="card-img-top"
+                alt="Graphite Sketch Pencil Set"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Graphite Sketch Pencil Set</h5>
+                <p class="card-text">
+                  Grades from HB to 8B for light outlines and deep shading.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Water Color Set.jpg"
+                class="card-img-top"
+                alt="Watercolor Paint Set (12 Colors)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Watercolor Paint Set (12 Colors)</h5>
+                <p class="card-text">
+                  Twelve bright pans in a compact tray, ready for washes and
+                  blending.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Acrylic.jpg"
+                class="card-img-top"
+                alt="Acrylic Paint Tubes Set"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Acrylic Paint Tubes Set</h5>
+                <p class="card-text">
+                  Bold, fast-drying colors for canvas, wood and paper.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Paintbrush Sketch Set.jpg"
+                class="card-img-top"
+                alt="Paint Brush Set (99 Pieces)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paint Brush Set (99 Pieces)</h5>
+                <p class="card-text">
+                  A complete paintbrush set with various brush shapes and sizes,
+                  perfect for detailed strokes, blending, and creative painting.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Canvas Board.jpg"
+                class="card-img-top"
+                alt="Canvas Boards (3 Pack)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Canvas Boards (3 Pack)</h5>
+                <p class="card-text">
+                  Primed boards ready for acrylic or oil, no stretching needed.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Colored Pencil Set.jpg"
+                class="card-img-top"
+                alt="Colored Pencil Set (24 Colors)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Colored Pencil Set (24 Colors)</h5>
+                <p class="card-text">
+                  Smooth, blendable colors for sketching, layering and coloring.
+                  For professional Artists...
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Dual tip markers.jpg"
+                class="card-img-top"
+                alt="Dual-Tip Art Markers (6 Pack)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dual-Tip Art Markers (6 Pack)</h5>
+                <p class="card-text">
+                  A fine tip and a brush tip in one marker for lettering and
+                  color.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Eraser and Sharpener.jpg"
+                class="card-img-top"
+                alt="Eraser and Sharpener Set"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Eraser and Sharpener Set</h5>
+                <p class="card-text">
+                  Eastri drawing set with a kneaded eraser, a block eraser and a
+                  metal sharpener, made for clean, crisp lines.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img
+                src="Image/Tabletop Wooden Easel.jpg"
+                class="card-img-top"
+                alt="Tabletop Wooden Easel"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tabletop Wooden Easel</h5>
+                <p class="card-text">
+                  A sturdy wood easel that holds your canvas at a comfortable
+                  angle. 1.6–1.75 m solid wood easels for painting, display, or
+                  sketching, adjustable height.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Top 10 Products -->
+
+      <hr />
+
+      <!-- Start of Testimonies -->
+      <section class="container my-5">
+        <h2 class="text-center mb-2">What Our Artists Say</h2>
+        <p class="text-center text-muted mb-4">
+          Real creativity, shared by the people who use our supplies.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Insecurities.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Hina Tsan"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "The graphite pencil set is a dream. The shading goes from
+                  soft to deep black so smoothly, and my sketches finally look
+                  the way I picture them."
+                </p>
+                <h6 class="card-title mb-0">Hina Tsan Myzuri</h6>
+                <small class="text-muted">Fine Arts Student</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Amore.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Xerxes"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "I ordered the watercolor set for a weekend hobby and now I
+                  paint every night. The colors are so bright, and everything
+                  arrived neatly packed."
+                </p>
+                <h6 class="card-title mb-0">Xerxes Licht Glamoure</h6>
+                <small class="text-muted">Weekend Painter</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Itachi Uchiha.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Itachi"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "We stocked up our whole art club here. The colored pencils
+                  and markers are great quality, and the prices are friendly for
+                  students."
+                </p>
+                <h6 class="card-title mb-0">Itachi Uchiha</h6>
+                <small class="text-muted">Art Club President</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Gojo Saturo.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Gojo"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "Artistic You has everything in one place, from brushes to
+                  canvas boards. It saves me so much time, and my students love
+                  the markers."
+                </p>
+                <h6 class="card-title mb-0">Seraphim Elior S. Gojo</h6>
+                <small class="text-muted">Doctor of Fine Arts</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Sepheroth.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Sepheroth"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "The acrylic paints are rich and cover so well, even on the
+                  first coat. I finished my first canvas in one weekend and I'm
+                  already planning the next."
+                </p>
+                <h6 class="card-title mb-0">Sepheroth Wings Ethereal</h6>
+                <small class="text-muted">Hobbyist Illustrator</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center h-100 p-3">
+              <img
+                src="Image/Medria Done.jpg"
+                class="rounded-circle mx-auto mb-3"
+                alt="Medrivy"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text">
+                  "The wooden easel is sturdy and sits right on my desk. The
+                  brush set is just as good, with a perfect size for every
+                  detail."
+                </p>
+                <h6 class="card-title mb-0">Medrivy Zenelynx Vilya</h6>
+                <small class="text-muted">Mural Artist</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Testimonies -->
+      <hr />
+
+      <!-- Start of Gallery -->
+      <section class="container my-5">
+        <h2 class="text-center mb-2">Gallery</h2>
+        <p class="text-center text-muted mb-4">
+          A look at the art made with our supplies.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Sketch.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Pencil sketch portrait"
+              />
+              <img
+                src="Image/Gallery/Sketch1.JPG"
+                class="w-50 rounded gallery-img"
+                alt="Pencil sketch of a woman"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">
+              A simple sketch can make a great impression.
+            </h5>
+          </div>
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Water Color.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Watercolor landscape with a barn"
+              />
+              <img
+                src="Image/Gallery/WaterColor1.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Watercolor park bench under a tree"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">The Beginners Journey</h5>
+          </div>
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Acrylic Painting.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Painting of a fawn"
+              />
+              <img
+                src="Image/Gallery/AcryPaint1.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Painting of a swan"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">
+              The skills and talents challenger
+            </h5>
+          </div>
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Colored Pencil.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Colored pencil drawing of a cat"
+              />
+              <img
+                src="Image/Gallery/Colored Pencil1.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Colored pencil drawing of a puppy"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">
+              Time is your guide to perfection
+            </h5>
+          </div>
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Marker.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Marker lettering"
+              />
+              <img
+                src="Image/Gallery/Marker-1.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Marker alphabet lettering"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">Ink That Dances to Your Hand</h5>
+          </div>
+          <div class="col">
+            <div class="d-flex gap-2">
+              <img
+                src="Image/Gallery/Mural (1).jpg"
+                class="w-50 rounded gallery-img"
+                alt="Mural sketch"
+              />
+              <img
+                src="Image/Gallery/Mural2.jpg"
+                class="w-50 rounded gallery-img"
+                alt="Mural of a city"
+              />
+            </div>
+            <h5 class="text-center fs-6 mt-2">Paint Big. Dream Bigger</h5>
+          </div>
+        </div>
+      </section>
+      <!-- End of Gallery -->
+    </main>
+
+    <!-- Start of Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold">Artistic You</h5>
+            <p class="text-secondary">
+              Art materials for every kind of artist. Sketch it, paint it, make
+              it yours.
+            </p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-decoration-none text-secondary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Products.html"
+                  class="text-decoration-none text-secondary"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="About.html" class="text-decoration-none text-secondary"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Contacts.html"
+                  class="text-decoration-none text-secondary"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold">Shop</h6>
+            <ul class="list-unstyled text-secondary">
+              <li>Sketching</li>
+              <li>Painting</li>
+              <li>Drawing</li>
+              <li>Easels and Canvas</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h6 class="fw-bold">Contact Us</h6>
+            <ul class="list-unstyled text-secondary">
+              <li>Email: artisticyou@gmail.com</li>
+              <li>Phone: 0900 639 2586</li>
+              <li>Open daily, 9 AM to 6 PM</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4" />
+
+        <p class="text-center text-secondary small mb-0">
+          &copy; 2026 Artistic You. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

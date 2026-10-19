@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(
+    135deg,
+    var(--bs-white),
+    var(--bs-success-bg-subtle),
+    var(--bs-primary-bg-subtle)
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  padding: 15px;
+}
+
+.glass,
+.card.glass {
+  background: rgba(var(--bs-white-rgb), 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--bs-white-rgb), 0.5);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(var(--bs-primary-rgb), 0.15);
+}
+
+.navbar {
+  box-shadow: 0 4px 20px rgba(var(--bs-primary-rgb), 0.12);
+}
+
+.gallery-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .card-text {
+  flex-grow: 1;
+}
+
+.card-body .btn {
+  align-self: center;
+}
+
+.card {
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+  --bs-btn-bg: #3f8d89;
+  /* --bs-btn-border-color: #7a4fd6; */
+  --bs-btn-hover-bg: #1f21b1;
+  --bs-btn-hover-border-color: #209f70;
+}
