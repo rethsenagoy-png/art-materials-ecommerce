@@ -1,15 +1,22 @@
 body {
-  background: linear-gradient(
-    135deg,
-    var(--bs-white),
-    var(--bs-success-bg-subtle),
-    var(--bs-primary-bg-subtle)
-  );
+  background-color: #120a06;
+  background-image:
+    linear-gradient(rgba(20, 10, 5, 0.55), rgba(20, 10, 5, 0.8)),
+    url("../Image/Background.jpg");
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
-
   font-family: "Poppins", sans-serif;
 }
+.glass {
+  background: rgba(var(--bs-dark-rgb), 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
 h1,
 h2,
 h3,
@@ -20,18 +27,111 @@ h5,
   padding: 15px;
 }
 
-.glass,
-.card.glass {
-  background: rgba(var(--bs-white-rgb), 0.25);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(var(--bs-white-rgb), 0.5);
-  border-radius: 1rem;
-  box-shadow: 0 8px 32px rgba(var(--bs-primary-rgb), 0.15);
+h1,
+h2,
+h3 {
+  color: #ffd27f;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.card-title {
+  color: rgb(215, 212, 173);
+}
+
+h5 {
+  color: wheat;
+}
+
+.text-muted {
+  color: #ffffff !important;
+}
+
+.text {
+  color: white;
+}
+
+.fw-bold {
+  color: white;
+}
+.card {
+  background: rgba(var(--bs-dark-rgb), 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.top-products {
+  background: rgba(var(--bs-dark-rgb), 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar {
   box-shadow: 0 4px 20px rgba(var(--bs-primary-rgb), 0.12);
+  color: antiquewhite;
+}
+
+/* ===== Introduction section ===== */
+.Introduction {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Introduction img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.Introduction::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 10, 5, 0.55),
+    rgba(20, 10, 5, 0.7)
+  );
+  z-index: 1;
+}
+
+.Introduction h2,
+.Introduction h5 {
+  position: relative;
+  z-index: 2;
+  color: #fff8ec;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.Introduction h2 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #ffd27a;
+}
+
+.Introduction h5 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 28px;
 }
 
 .gallery-img {
@@ -47,6 +147,7 @@ h5,
 
 .card-body .card-text {
   flex-grow: 1;
+  color: white;
 }
 
 .card-body .btn {
