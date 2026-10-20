@@ -54,6 +54,14 @@ h5 {
 .fw-bold {
   color: white;
 }
+
+.mb-2 {
+  color: white;
+}
+
+.form-label {
+  color: white;
+}
 .card {
   background: rgba(var(--bs-dark-rgb), 0.45);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -68,7 +76,6 @@ h5 {
 
 .navbar {
   box-shadow: 0 4px 20px rgba(var(--bs-primary-rgb), 0.12);
-  color: antiquewhite;
 }
 
 /* ===== Introduction section ===== */
